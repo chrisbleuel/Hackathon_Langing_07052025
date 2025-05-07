@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 export const MainNav = () => {
@@ -7,7 +8,7 @@ export const MainNav = () => {
         <div className="justify-center items-center self-stretch flex w-12 my-auto py-6">
           <img src="https://cdn.builder.io/api/v1/image/assets/473d424b1c61442992c0c3820764778e/d3594334ba36efbe4d3ab0c6a39582426c65d943?placeholderIfAbsent=true" className="aspect-[1] object-contain w-12 self-stretch my-auto" alt="Logo" />
         </div>
-        <nav className="items-center self-stretch flex min-w-60 gap-8 text-xl text-[#32373E] font-normal tracking-[0.1px] leading-[1.4] flex-wrap my-auto">
+        <nav className="items-center self-stretch flex min-w-60 gap-8 text-base text-[#32373E] font-normal tracking-[0.08px] leading-[1.4] flex-wrap my-auto">
           <a href="#" className="text-[#32373E] self-stretch gap-2 my-auto hover:text-[#0072EF] transition-colors">
             Browse shop
           </a>
