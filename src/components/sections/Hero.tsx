@@ -10,7 +10,7 @@ export const Hero = () => {
       <div className="w-full">
         <img 
           src="https://cdn.builder.io/api/v1/image/assets/473d424b1c61442992c0c3820764778e/b2449d9df6265c8200890e9342c69ee3d54330b2?placeholderIfAbsent=true" 
-          className={`w-full object-cover ${isMobile ? 'h-[450px]' : ''}`} 
+          className={`${isMobile ? 'h-[300px] object-left' : 'w-full'} object-cover`} 
           alt="Hero image" 
         />
       </div>
