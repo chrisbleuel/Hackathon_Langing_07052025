@@ -14,7 +14,9 @@ export const Hero = () => {
           alt="Hero image" 
         />
       </div>
-      <div className={`absolute top-1/2 left-1/2 transform -translate-y-1/2 ${isMobile ? 'w-[90%] p-4' : 'w-[50%] p-8'} bg-opacity-90 bg-white/0 mx-0 my-0`}>
+      
+      {/* Content moved below the image instead of absolute positioning */}
+      <div className={`${isMobile ? 'w-full p-4' : 'w-[50%] p-8'} bg-white mx-auto my-4`}>
         <div className="max-w-[800px]">
           <span className={`text-[#32373E] ${isMobile ? 'text-sm' : 'text-base'} tracking-[0.16px] uppercase block font-normal`}>
             Eyeglasses with
