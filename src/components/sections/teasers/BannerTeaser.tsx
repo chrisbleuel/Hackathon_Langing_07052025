@@ -2,7 +2,7 @@ import React from 'react';
 export const BannerTeaser = () => {
   return <div className="w-full max-w-[1152px] mx-auto mb-8">
       <div className="relative">
-        <img className="aspect-[2.27] object-contain w-full" alt="Banner" src="/lovable-uploads/232fa29e-c638-4946-a71c-69ea50e4b86f.png" />
+        <img alt="Banner" src="/lovable-uploads/232fa29e-c638-4946-a71c-69ea50e4b86f.png" className="aspect-[2.27] object-contain w-full w-[563px] " />
         <div className="absolute bottom-0 left-0 translate-y-[20px] w-[563px] bg-[#F2F5F8] p-50 py-[40px] px-[40px]">
           <h2 className="text-2xl text-[#32373E] tracking-[0.24px]">
             <span className="font-bold block">Special offers available</span>
