@@ -9,9 +9,9 @@ export const Hero = () => {
   return <section className="w-full relative overflow-hidden my-0 mx-0 py-0">
       <div className="w-full">
         <img 
-          src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&q=80&w=1200" 
+          src="https://cdn.builder.io/api/v1/image/assets/473d424b1c61442992c0c3820764778e/b2449d9df6265c8200890e9342c69ee3d54330b2?placeholderIfAbsent=true" 
           className={`${isMobile ? 'h-[300px] object-left' : 'w-full'} object-cover`} 
-          alt="Hero image of trees" 
+          alt="Hero image" 
         />
       </div>
       
