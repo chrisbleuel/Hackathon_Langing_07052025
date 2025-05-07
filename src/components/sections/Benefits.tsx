@@ -1,3 +1,4 @@
+
 import React from 'react';
 const benefits = [{
   icon: 'https://cdn.builder.io/api/v1/image/assets/473d424b1c61442992c0c3820764778e/12b1682631ac3e7073c6bcd887144093bbd4c535?placeholderIfAbsent=true',
@@ -21,7 +22,7 @@ const benefits = [{
 export const Benefits = () => {
   return <section className="w-full py-16 ">
       <div className="content-start flex-wrap flex w-full gap-4 text-base text-[#32373E] font-normal text-center tracking-[0.08px] max-w-[1440px] mx-auto px-4">
-        {benefits.map((benefit, index) => <div key={index} className="flex min-h-[130px] flex-col items-stretch grow shrink w-[143px] pt-2 pb-[38px] px-2 rounded-[56px] hover:bg-[#F2F5F8] transition-colors">
+        {benefits.map((benefit, index) => <div key={index} className="flex min-h-[130px] flex-col items-stretch grow shrink w-[143px] pt-2 pb-[38px] px-2 hover:bg-[#F2F5F8] transition-colors">
             <img src={benefit.icon} className="aspect-[1] object-contain w-12 self-center" alt={benefit.text} />
             <div className="text-[#32373E] mt-3">{benefit.text}</div>
           </div>)}
