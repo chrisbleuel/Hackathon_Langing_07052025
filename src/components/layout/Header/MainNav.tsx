@@ -11,7 +11,7 @@ import {
 export const MainNav = () => {
   const isMobile = useIsMobile();
   
-  return <div className="justify-center items-center flex min-h-[96px] w-full bg-white pt-0 pb-0 px-4">
+  return <div className="justify-center items-center flex min-h-[112px] w-full bg-white pt-0 pb-0 px-4">
       <div className="self-stretch flex min-w-60 w-full max-w-[1440px] items-center flex-wrap flex-1 shrink basis-[0%] my-auto px-0">
         <div className="justify-center items-center self-stretch flex w-12 my-auto py-6">
           <img src="https://cdn.builder.io/api/v1/image/assets/473d424b1c61442992c0c3820764778e/d3594334ba36efbe4d3ab0c6a39582426c65d943?placeholderIfAbsent=true" className="aspect-[1] object-contain w-12 self-stretch my-auto" alt="Logo" />
