@@ -1,10 +1,18 @@
+
 import React from 'react';
 
 export const ProductTeaser = () => {
   return (
     <div className="w-full max-w-[1152px] mx-auto bg-white mb-8">
-      <div className="relative">
-        <div className="w-[563px] bg-[#F2F5F8] p-10">
+      <div className="relative flex flex-col md:flex-row">
+        <div className="flex justify-start">
+          <img 
+            src="/lovable-uploads/d7612625-7594-4b8e-8dce-ff2524e1c02f.png" 
+            alt="Product teaser" 
+            className="aspect-square object-contain w-[858px] h-[858px]" 
+          />
+        </div>
+        <div className="w-[563px] bg-[#F2F5F8] p-10 self-end md:absolute md:bottom-0 md:right-0 md:translate-y-[20px]">
           <h2 className="text-2xl text-[#32373E] tracking-[0.24px]">
             <span className="font-bold block leading-none">ZEISS ClearView</span>
             <span className="font-light block leading-[30px] mt-2">
