@@ -1,4 +1,3 @@
-
 import React from 'react';
 export const BannerTeaser = () => {
   return <div className="w-full max-w-[1152px] mx-auto mb-8">
