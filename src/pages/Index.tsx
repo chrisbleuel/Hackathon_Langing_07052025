@@ -1,12 +1,26 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import React from 'react';
+import { Header } from '@/components/layout/Header';
+import { Footer } from '@/components/layout/Footer';
+import { Hero } from '@/components/sections/Hero';
+import { Benefits } from '@/components/sections/Benefits';
+import { QuizTeaser } from '@/components/sections/teasers/QuizTeaser';
+import { BannerTeaser } from '@/components/sections/teasers/BannerTeaser';
+import { ProductTeaser } from '@/components/sections/teasers/ProductTeaser';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="flex flex-col min-h-screen bg-white">
+      <Header />
+      <main className="flex-grow">
+        <Hero />
+        <Benefits />
+        <div className="w-full px-4 py-8">
+          <QuizTeaser />
+          <BannerTeaser />
+          <ProductTeaser />
+        </div>
+      </main>
+      <Footer />
     </div>
   );
 };
