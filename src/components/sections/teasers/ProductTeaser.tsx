@@ -1,18 +1,21 @@
 
 import React from 'react';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 export const ProductTeaser = () => {
+  const isMobile = useIsMobile();
+  
   return (
     <div className="w-full max-w-[1152px] mx-auto bg-white mb-8">
-      <div className="relative flex flex-col md:flex-row">
+      <div className={`relative ${isMobile ? 'flex flex-col' : ''}`}>
         <div className="flex justify-start">
           <img 
             src="/lovable-uploads/d7612625-7594-4b8e-8dce-ff2524e1c02f.png" 
             alt="Product teaser" 
-            className="aspect-square object-contain w-[858px] h-[858px]" 
+            className={`aspect-square object-contain ${isMobile ? 'w-full' : 'w-[858px] h-[858px]'}`}
           />
         </div>
-        <div className="w-[563px] bg-[#F2F5F8] p-10 self-end md:absolute md:bottom-0 md:right-0 md:translate-y-[20px]">
+        <div className={`${isMobile ? 'w-full' : 'absolute bottom-0 right-0 translate-y-[20px] w-[563px]'} bg-[#F2F5F8] p-10`}>
           <h2 className="text-2xl text-[#32373E] tracking-[0.24px]">
             <span className="font-bold block leading-none">ZEISS ClearView</span>
             <span className="font-light block leading-[30px] mt-2">
