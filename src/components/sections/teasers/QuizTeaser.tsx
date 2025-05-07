@@ -1,9 +1,18 @@
+
 import React from 'react';
+import { useIsMobile } from '@/hooks/use-mobile';
+
 export const QuizTeaser = () => {
+  const isMobile = useIsMobile();
+  
   return <div className="w-full max-w-[1152px] mx-auto bg-white mb-8">
-      <div className="relative">
-        <img src="https://cdn.builder.io/api/v1/image/assets/473d424b1c61442992c0c3820764778e/7d9a81861b5a16c363b07dc9550249a4f3e3cb09?placeholderIfAbsent=true" className="aspect-[1.78] object-contain w-[858px]" alt="Quiz banner" />
-        <div className="absolute bottom-0 right-0 translate-y-[20px] w-[563px] bg-[#F2F5F8] p-10 my-0">
+      <div className={`relative ${isMobile ? 'flex flex-col' : ''}`}>
+        <img 
+          src="https://cdn.builder.io/api/v1/image/assets/473d424b1c61442992c0c3820764778e/7d9a81861b5a16c363b07dc9550249a4f3e3cb09?placeholderIfAbsent=true" 
+          className={`aspect-[1.78] object-contain ${isMobile ? 'w-full' : 'w-[858px]'}`} 
+          alt="Quiz banner" 
+        />
+        <div className={`${isMobile ? 'w-full' : 'absolute bottom-0 right-0 translate-y-[20px] w-[563px]'} bg-[#F2F5F8] p-10 my-0`}>
           <h2 className="text-2xl text-[#32373E] tracking-[0.24px]">
             <span className="font-bold block">Need help finding your new glasses?</span>
             <span className="font-light block">Take our short quiz to find your perfect pair.</span>
