@@ -16,8 +16,8 @@ export const Hero = () => {
       </div>
       
       {isMobile ? (
-        // Mobile view - content below image
-        <div className="w-[90%] p-4 mx-auto my-4">
+        // Mobile view - content below image, moved 50px up
+        <div className="w-[90%] p-4 mx-auto -mt-[50px] my-4">
           <div className="max-w-[800px]">
             <span className="text-[#32373E] text-sm tracking-[0.16px] uppercase block font-normal">
               Eyeglasses with
