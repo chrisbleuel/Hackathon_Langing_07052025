@@ -15,7 +15,7 @@ export const ProductTeaser = () => {
             className={`aspect-square object-contain ${isMobile ? 'w-full' : 'w-[858px] h-[858px]'}`}
           />
         </div>
-        <div className={`${isMobile ? 'w-full mt-5' : 'absolute bottom-0 left-0 translate-y-[20px] w-[563px]'} bg-[#F2F5F8] p-10`}>
+        <div className={`${isMobile ? 'w-full mt-5' : 'absolute bottom-0 right-0 translate-y-[20px] w-[563px]'} bg-[#F2F5F8] p-10`}>
           <h2 className="text-2xl text-[#32373E] tracking-[0.24px]">
             <span className="font-bold block leading-none">ZEISS ClearView</span>
             <span className="font-light block leading-[30px] mt-2">
