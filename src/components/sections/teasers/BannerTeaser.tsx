@@ -1,9 +1,11 @@
+
 import React from 'react';
+
 export const BannerTeaser = () => {
   return <div className="w-full max-w-[1152px] mx-auto mb-8">
       <div className="relative">
         <img className="aspect-[2.27] object-contain w-full" alt="Banner" src="/lovable-uploads/232fa29e-c638-4946-a71c-69ea50e4b86f.png" />
-        <div className="absolute top-0 right-0 w-[563px] bg-[#F2F5F8] p-10">
+        <div className="absolute bottom-0 right-0 translate-y-[-20px] w-[563px] bg-[#F2F5F8] p-10">
           <h2 className="text-2xl text-[#32373E] tracking-[0.24px]">
             <span className="font-bold block">Special offers available</span>
             <span className="font-light block">Discover exclusive deals on premium eyewear.</span>
