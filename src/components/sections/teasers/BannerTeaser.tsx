@@ -11,7 +11,7 @@ export const BannerTeaser = () => {
           <img 
             alt="Banner" 
             src="/lovable-uploads/232fa29e-c638-4946-a71c-69ea50e4b86f.png" 
-            className={`aspect-[1.78] object-contain ${isMobile ? 'w-full' : 'w-[858px] ml-auto'}`} 
+            className={`${isMobile ? 'w-full h-full object-cover' : 'w-[858px] ml-auto object-contain'} aspect-[1.78]`} 
           />
         </div>
         <div className={`${isMobile ? 'w-full' : 'absolute bottom-0 left-0 translate-y-[20px] w-[563px]'} bg-[#F2F5F8] py-[40px] px-[40px]`}>
