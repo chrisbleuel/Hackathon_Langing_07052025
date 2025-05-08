@@ -7,7 +7,7 @@ export const BannerTeaser = () => {
   
   return <div className="w-full max-w-[1152px] mx-auto mb-8">
       <div className={`relative ${isMobile ? 'flex flex-col' : ''}`}>
-        <div className={`flex ${isMobile ? 'justify-center w-full h-full' : 'justify-end'} my-[64px]`}>
+        <div className={`flex ${isMobile ? 'justify-center w-full h-full bg-gray-200' : 'justify-end'} my-[64px]`}>
           <img 
             alt="Banner" 
             src="/lovable-uploads/232fa29e-c638-4946-a71c-69ea50e4b86f.png" 
