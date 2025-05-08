@@ -7,11 +7,11 @@ export const BannerTeaser = () => {
   
   return <div className="w-full max-w-[1152px] mx-auto mb-8">
       <div className={`relative ${isMobile ? 'flex flex-col' : ''}`}>
-        <div className={`flex ${isMobile ? 'justify-center' : 'justify-end'} my-[64px] w-full`}>
+        <div className={`flex ${isMobile ? 'justify-center' : 'justify-end'} my-[64px]`}>
           <img 
             alt="Banner" 
             src="/lovable-uploads/232fa29e-c638-4946-a71c-69ea50e4b86f.png" 
-            className={`w-full h-full object-cover aspect-[1.78]`} 
+            className={`${isMobile ? 'w-full h-full object-cover' : 'w-[858px] ml-auto object-contain'} aspect-[1.78]`} 
           />
         </div>
         <div className={`${isMobile ? 'w-full' : 'absolute bottom-0 left-0 translate-y-[20px] w-[563px]'} bg-[#F2F5F8] py-[40px] px-[40px]`}>
